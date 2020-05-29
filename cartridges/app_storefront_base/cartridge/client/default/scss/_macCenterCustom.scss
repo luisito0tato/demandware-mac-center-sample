@@ -1,0 +1,33 @@
+body {
+    background-color: #ffffff !important;
+}
+
+a.btn-type-01 {
+    background-color: #0071e3;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: -.1px;
+    display: block;
+}
+
+.mini-cart {
+    margin-top: 0;
+}
+
+.user,
+.minicart {
+    display: inline-block
+}
+
+.user {
+    .user-message {
+        display: none;
+    }
+
+    .fa {
+        font-size: 1.5em;
+    }
+}

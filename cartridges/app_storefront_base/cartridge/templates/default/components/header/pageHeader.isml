@@ -19,9 +19,8 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-12 col-md-4">
-                        <a class="logo-home" href="${URLUtils.url('Home-Show')}"
-                            title="${Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg(
-                                   'global.home', 'common', null))}">
+                        <a class="logo-home" href="${URLUtils.url('Home-Show')}" title="${Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg(
+                                                                                        'global.home', 'common', null))}">
                             <img class="hidden-md-down" src="${URLUtils.staticURL('/images/logo.png')}"
                                 alt="${Resource.msg('global.storename', 'common', null)}" />
                             <img class="d-lg-none" src="${URLUtils.staticURL('/images/logo.png')}"
@@ -29,7 +28,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 ">
-                        <div class="row justify-content-end">
+                        <div class="row justify-content-end align-items-center">
                             <div class="col-12 col-md-8 search hidden-xs-down">
                                 <isinclude template="components/header/search" />
                             </div>

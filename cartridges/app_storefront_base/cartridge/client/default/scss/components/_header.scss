@@ -38,7 +38,7 @@ header {
 
         ul {
             li {
-                font-size: 1rem;
+                font-size: 0.93rem;
                 margin-right: 20px;
 
                 a {
@@ -56,9 +56,36 @@ header {
                     margin-right: 0;
 
                     a {
+                        color: #ffffff !important;
+
                         &.pink {
-                            background: #910278;
+                            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8c0178+0,ff157c+100 */
+                            background: #8c0178;
+                            /* Old browsers */
+                            background: -moz-linear-gradient(left, #8c0178 0%, #ff157c 100%);
+                            /* FF3.6-15 */
+                            background: -webkit-linear-gradient(left, #8c0178 0%, #ff157c 100%);
+                            /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(to right, #8c0178 0%, #ff157c 100%);
+                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8c0178', endColorstr='#ff157c', GradientType=1);
+                            /* IE6-9 */
                             border-radius: 5px 0px 0px 5px;
+                            transition: background-color 0.333s ease-in-out;
+
+                            &:hover {
+                                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8c0178+0,ff157c+100 */
+                                background: #ff157c;
+                                /* Old browsers */
+                                background: -moz-linear-gradient(left, #ff157c 0%, #8c0178 100%);
+                                /* FF3.6-15 */
+                                background: -webkit-linear-gradient(left, #ff157c 0%, #8c0178 100%);
+                                /* Chrome10-25,Safari5.1-6 */
+                                background: linear-gradient(to right, #ff157c 0%, #8c0178 100%);
+                                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff157c', endColorstr='#8c0178', GradientType=1);
+                                /* IE6-9 */
+                            }
                         }
 
                         &.blue {

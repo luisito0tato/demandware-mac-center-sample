@@ -36,7 +36,7 @@
 <link rel="icon" type="image/png" href="${URLUtils.staticURL('/images/favicons/favicon-16x16.png')}" sizes="16x16" />
 <link rel="icon" type="image/png" href="${URLUtils.staticURL('/images/favicons/favicon-128.png')}" sizes="128x128" />
 
-<link rel="stylesheet" href="${URLUtils.staticURL('/css/site.css')}" />
+<link rel="stylesheet" href="${URLUtils.staticURL('/css/mac-center.css')}" />
 <isloop items="${require('*/cartridge/scripts/assets.js').styles}" var="style">
     <link rel="stylesheet" href="${style.src}" <isif condition="${style.integrity != null}">
     integrity="${style.integrity}" crossorigin="anonymous"</isif> />
