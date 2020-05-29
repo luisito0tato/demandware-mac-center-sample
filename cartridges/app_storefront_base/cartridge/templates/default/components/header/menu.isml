@@ -1,4 +1,8 @@
-<nav class="navbar navbar-expand-md bg-inverse col-12">
+<div class="container">
+    <button class="navbar-toggler d-md-none" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false"
+        aria-label="Toggle navigation">
+        &#9776; <span class="hidden-xs-down">Menu</span>
+    </button>
     <div class="close-menu clearfix d-lg-none">
         <div class="back pull-left">
             <button role="button" aria-label="${Resource.msg('label.header.menu.back', 'common', null)}">
@@ -13,19 +17,23 @@
             </button>
         </div>
     </div>
-    <div class="menu-group" role="navigation">
-        <ul class="nav navbar-nav" role="menu">
+    <div class="menu-group collapse navbar-collapse" role="navigation" id="sg-navbar-collapse">
+        <ul class="navbar-nav mr-auto" role="menu">
             <isif condition="${pdict.categories}">
                 <isloop items="${pdict.categories}" var="category">
                     <isif condition="${category.subCategories}">
                         <li class="nav-item dropdown" role="presentation">
-                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                            <a href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
+                            id="${category.id}" class="nav-link dropdown-toggle" role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
                             <isset name="menuItem" value="${category}" scope="page" />
                             <isinclude template="components/header/menuItem" />
                         </li>
                     <iselse/>
                         <li class="nav-item" role="presentation">
-                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link" role="link" tabindex="0">${category.name}</a>
+                            <a href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
+                            id="${category.id}" class="nav-link" role="link" tabindex="0">${category.name}</a>
                         </li>
                     </isif>
                 </isloop>
@@ -33,5 +41,13 @@
             <isinclude url="${URLUtils.url('Account-Header', 'mobile', true)}" />
             <isinclude url="${URLUtils.url('Page-Locale', 'mobile', true)}" />
         </ul>
+        <ul class="navbar-nav right-nav">
+            <li class="nav-item">
+                <a class="nav-link pink" href="">Express Bogotá</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link blue" href="">Stop <b>& Go</b></a>
+            </li>
+        </ul>
     </div>
-</nav>
+</div>

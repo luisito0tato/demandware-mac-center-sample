@@ -4,9 +4,92 @@ $banner-padding: 0.3125em;
 $menu-padding: 0.5em;
 $menu-item-margin: 0.625em;
 
-.header {
-    position: relative;
-    background-color: red;
+header {
+    display: block;
+    background: $header-color;
+
+    .preheader {
+        padding: 5px 0;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #fff;
+        background: #000 url("../images/pre-header.jpg");
+
+        b {
+            font-weight: 900;
+            color: #fff000;
+        }
+    }
+
+    .menu {
+        display: block;
+        padding: 15px 0;
+
+        form {
+            .form-control {
+                background-image: url("../assets/images/search.png");
+                background-repeat: no-repeat;
+                background-position: 96% center;
+            }
+        }
+
+        .access {
+            display: block;
+
+            a {
+                display: inline-block;
+                text-align: center;
+                width: 24px;
+                height: 24px;
+                margin: 5px;
+            }
+        }
+    }
+
+    .navbar {
+        background: #000;
+
+        ul {
+            li {
+                font-size: 1rem;
+                margin-right: 20px;
+
+                a {
+                    color: #fff;
+
+                    &.blue {
+                        background: #0071e3;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            &.right-nav {
+                li {
+                    margin-right: 0;
+
+                    a {
+                        &.pink {
+                            background: #910278;
+                            border-radius: 5px 0px 0px 5px;
+                        }
+
+                        &.blue {
+                            background: #0071e3;
+                            border-radius: 0px 5px 5px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .navbar-header {

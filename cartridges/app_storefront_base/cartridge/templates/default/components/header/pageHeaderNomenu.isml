@@ -16,13 +16,41 @@
         </div>
     </div>
     <nav role="navigation">
-        <div class="header container">
-            <div class="col-12">
-                <div class="navbar-header brand row">
-                    <a class="logo-home" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
-                        <img class="hidden-md-down" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-                        <img class="d-lg-none" src="${URLUtils.staticURL('/images/logo-small.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-                    </a>
+        <div class="menu">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-4">
+                        <a class="logo-home" href="${URLUtils.url('Home-Show')}"
+                            title="${Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg(
+                                   'global.home', 'common', null))}">
+                            <img class="hidden-md-down" src="${URLUtils.staticURL('/images/logo.png')}"
+                                alt="${Resource.msg('global.storename', 'common', null)}" />
+                            <img class="d-lg-none" src="${URLUtils.staticURL('/images/logo.png')}"
+                                alt="${Resource.msg('global.storename', 'common', null)}" />
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 ">
+                        <div class="row justify-content-end">
+                            <div class="col-12 col-md-8 search hidden-xs-down">
+                                <iscomment>
+                                    <form action="">
+                                        <input type="text" name="" class="form-control" placeholder="Buscar" id="">
+                                    </form>
+                                </iscomment>
+                                <isinclude template="components/header/search" />
+                            </div>
+                            <div class="col-12 col-md-auto">
+                                <div class="hidden-md-down access">
+                                    <isinclude url="${URLUtils.url('Account-Header')}" />
+                                    <isinclude url="${URLUtils.url('Page-Locale')}" />
+                                    <div class="minicart" data-action-url="${URLUtils.url('Cart-MiniCartShow')}">
+                                        <isinclude url="${URLUtils.url('Cart-MiniCart')}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
