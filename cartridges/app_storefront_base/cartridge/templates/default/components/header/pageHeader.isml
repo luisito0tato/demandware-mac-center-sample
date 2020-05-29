@@ -1,9 +1,8 @@
 <header>
     <isinclude template="/components/header/skipNav" />
-    <div class="header-banner slide-up d-none">
-        <div class="container preheader">
-            <div class="d-flex justify-content-between">
-                <div></div>
+    <div class="header-banner slide-up d-none preheader">
+        <div class="container ">
+            <div class="d-flex justify-content-center">
                 <div class="content">
                     <isslot id="header-banner-m" description="Slot above the site header" context="global" />
                 </div>
@@ -20,8 +19,9 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-12 col-md-4">
-                        <a class="logo-home" href="${URLUtils.url('Home-Show')}" title="${Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg(
-                                                                                        'global.home', 'common', null))}">
+                        <a class="logo-home" href="${URLUtils.url('Home-Show')}"
+                            title="${Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg(
+                                   'global.home', 'common', null))}">
                             <img class="hidden-md-down" src="${URLUtils.staticURL('/images/logo.png')}"
                                 alt="${Resource.msg('global.storename', 'common', null)}" />
                             <img class="d-lg-none" src="${URLUtils.staticURL('/images/logo.png')}"
@@ -31,11 +31,6 @@
                     <div class="col-12 col-md-6 ">
                         <div class="row justify-content-end">
                             <div class="col-12 col-md-8 search hidden-xs-down">
-                                <iscomment>
-                                    <form action="">
-                                        <input type="text" name="" class="form-control" placeholder="Buscar" id="">
-                                    </form>
-                                </iscomment>
                                 <isinclude template="components/header/search" />
                             </div>
                             <div class="col-12 col-md-auto">
@@ -83,9 +78,9 @@
         </iscomment>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <div class="row">
-                    <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}" />
-                </div>
+
+                <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}" />
+
                 <div class="search-mobile d-sm-none">
                     <isinclude template="components/header/search" />
                 </div>

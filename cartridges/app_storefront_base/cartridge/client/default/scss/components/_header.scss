@@ -8,33 +8,13 @@ header {
     display: block;
     background: $header-color;
 
-    .preheader {
-        padding: 5px 0;
-
-        p {
-            margin-bottom: 0;
-        }
-
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 14px;
-        color: #fff;
-        background: #000 url("../images/pre-header.jpg");
-
-        b {
-            font-weight: 900;
-            color: #fff000;
-        }
-    }
-
     .menu {
         display: block;
         padding: 15px 0;
 
         form {
             .form-control {
-                background-image: url("../assets/images/search.png");
+                background-image: url("../images/search.png");
                 background-repeat: no-repeat;
                 background-position: 96% center;
             }
