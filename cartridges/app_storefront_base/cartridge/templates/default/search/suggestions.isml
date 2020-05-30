@@ -4,12 +4,12 @@
             <isloop items="${pdict.suggestions.product.phrases}" var="phrase" status="listindex">
                 <isif condition="${!phrase.exactMatch}">
                     <li class="row justify-content-end header">
-                        <div class="col-xs-12 col-sm-10 do-you-mean">${Resource.msg('label.suggest.doyoumean', 'search', null)}</div>
+                        <div class="col-12 col-sm-10 do-you-mean">${Resource.msg('label.suggest.doyoumean', 'search', null)}</div>
                     </li>
                     <li class="row items" id="phrase-1-${listindex.index}" role="option">
                         <div class="col-12 item term">
                             <div class="row justify-content-end">
-                                <div class="col-xs-12 col-sm-10">
+                                <div class="col-12 col-sm-10">
                                     <a href="${URLUtils.url('Search-Show', 'q', phrase.value)}">
                                         ${phrase.value}
                                     </a>
@@ -22,15 +22,16 @@
         </isif>
         <isif condition="${pdict.suggestions.product && pdict.suggestions.product.available}">
             <li class="row justify-content-end header">
-                <div class="col-xs-12 col-sm-10">${Resource.msg('label.suggest.products', 'search', null)}</div>
+                <div class="col-12 col-sm-10">${Resource.msg('label.suggest.products', 'search', null)}</div>
             </li>
             <li class="row justify-content-end items">
                 <isloop items="${pdict.suggestions.product.products}" var="product" status="listindex">
                     <span class="col-12 item" id="product-${listindex.index}" role="option">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-10">
+                            <div class="col-12 col-sm-10">
                                 <a href="${product.url}" aria-label="${product.name}">
-                                    <img class="swatch-circle hidden-xs-down" alt="${product.name}" src="${product.imageUrl}" />
+                                    <img class="swatch-circle hidden-xs-down" alt="${product.name}"
+                                        src="${product.imageUrl}" />
                                     <span class="name">${product.name}</span>
                                 </a>
                             </div>
@@ -41,7 +42,7 @@
         </isif>
         <isif condition="${pdict.suggestions.category && pdict.suggestions.category.available}">
             <li class="row justify-content-end header">
-                <div class="col-xs-12 col-sm-10">
+                <div class="col-12 col-sm-10">
                     ${Resource.msg('label.suggest.categories', 'search', null)}
                 </div>
             </li>
@@ -49,16 +50,17 @@
                 <isloop items="${pdict.suggestions.category.categories}" var="category" status="listindex">
                     <div class="col-12 item" id="category-${listindex.index}" role="option">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-10">
+                            <div class="col-12 col-sm-10">
                                 <isif condition="${category.imageUrl != ''}">
                                     <a href="${category.url}">
-                                        <img class="swatch-circle hidden-xs-down" alt="${category.name}" src="${category.imageUrl}" />
+                                        <img class="swatch-circle hidden-xs-down" alt="${category.name}"
+                                            src="${category.imageUrl}" />
                                         <span class="name">
-		                                	${category.name}
-		                                    <isif condition="${category.parentID !== 'root'}">
-		                                        <span class="category-parent"> ${Resource.msg('label.suggest.in', 'search', null)} ${category.parentName}</span>
-		                                    </isif>
-		                            	</span>
+                                            ${category.name}
+                                            <isif condition="${category.parentID !== 'root'}">
+                                                <span class="category-parent"> ${Resource.msg('label.suggest.in', 'search', null)} ${category.parentName}</span>
+                                            </isif>
+                                        </span>
                                     </a>
                                 </isif>
                             </div>
@@ -69,7 +71,7 @@
         </isif>
         <isif condition="${pdict.suggestions.recent && pdict.suggestions.recent.available}">
             <li class="row justify-content-end header">
-                <div class="col-xs-12 col-sm-10">
+                <div class="col-12 col-sm-10">
                     ${Resource.msg('label.suggest.recent', 'search', null)}
                 </div>
             </li>
@@ -77,7 +79,7 @@
                 <isloop items="${pdict.suggestions.recent.phrases}" var="phrase" status="listindex">
                     <div class="col-12 item" id="phrase-2-${listindex.index}" role="option">
                         <div class="row">
-                            <div class="col-xs-12 offset-sm-2 col-sm-10 name">
+                            <div class="col-12 offset-sm-2 col-sm-10 name">
                                 <a href="${phrase.url}">${phrase.value}</a>
                             </div>
                         </div>
@@ -87,7 +89,7 @@
         </isif>
         <isif condition="${pdict.suggestions.popular && pdict.suggestions.popular.available}">
             <li class="row justify-content-end header">
-                <div class="col-xs-12 col-sm-10">
+                <div class="col-12 col-sm-10">
                     ${Resource.msg('label.suggest.popular', 'search', null)}
                 </div>
             </li>
@@ -95,7 +97,7 @@
                 <isloop items="${pdict.suggestions.popular.phrases}" var="phrase" status="listindex">
                     <div class="col-12 item" id="phrase-3-${listindex.index}" role="option">
                         <div class="row">
-                            <div class="col-xs-12 offset-sm-2 col-sm-10 name">
+                            <div class="col-12 offset-sm-2 col-sm-10 name">
                                 <a href="${phrase.url}">${phrase.value}</a>
                             </div>
                         </div>
@@ -105,7 +107,7 @@
         </isif>
         <isif condition="${pdict.suggestions.brand && pdict.suggestions.brand.available}">
             <li class="row justify-content-end header">
-                <div class="col-xs-12 col-sm-10">
+                <div class="col-12 col-sm-10">
                     ${Resource.msg('label.suggest.brand', 'search', null)}
                 </div>
             </li>
@@ -113,7 +115,7 @@
                 <isloop items="${pdict.suggestions.brand.phrases}" var="phrase" status="listindex">
                     <div class="col-12 item" id="phrase-4-${listindex.index}" role="option">
                         <div class="row">
-                            <div class="col-xs-12 offset-sm-2 col-sm-10 name">
+                            <div class="col-12 offset-sm-2 col-sm-10 name">
                                 <a href="${phrase.url}">${phrase.value}</a>
                             </div>
                         </div>
@@ -123,7 +125,7 @@
         </isif>
         <isif condition="${pdict.suggestions.content && pdict.suggestions.content.available}">
             <li class="row justify-content-end header">
-                <div class="col-xs-12 col-sm-10">
+                <div class="col-12 col-sm-10">
                     ${Resource.msg('label.suggest.content', 'search', null)}
                 </div>
             </li>
@@ -131,7 +133,7 @@
                 <isloop items="${pdict.suggestions.content.contents}" var="content" status="listindex">
                     <div class="col-12 item" id="content-${listindex.index}" role="option">
                         <div class="row">
-                            <div class="col-xs-12 offset-sm-2 col-sm-10 name">
+                            <div class="col-12 offset-sm-2 col-sm-10 name">
                                 <a href="${content.url}">${content.name}</a>
                             </div>
                         </div>
