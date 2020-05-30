@@ -42,10 +42,10 @@
     </ul>
     <ul class="navbar-nav right-nav">
         <li class="nav-item">
-            <a class="nav-link pink" href="${URLUtils.url('express-bogota')}">Express Bogotá</a>
+            <a class="nav-link pink" href="${URLUtils.url('Page-Show', 'cid', 'express-bogota')}">Express Bogotá</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link blue" href="${URLUtils.url('stop-n-go')}">Stop <b>& Go</b></a>
+            <a class="nav-link blue" href="${URLUtils.url('Page-Show', 'cid', 'stop-n-go')}">Stop <b>& Go</b></a>
         </li>
     </ul>
 </div>
