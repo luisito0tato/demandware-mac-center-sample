@@ -160,3 +160,11 @@
         color: $white;
     }
 }
+
+
+.product-tile{
+    .tile-body {
+        padding: .625em 0 1.875em;
+        text-align: center;
+    }
+}

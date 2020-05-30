@@ -62,13 +62,6 @@ $slide-out-animation: left 0.5s cubic-bezier(0, 1, 0.5, 1);
     }
 }
 
-.nav-item .nav-link:hover,
-.nav-item .nav-link:focus,
-.nav-item.show .nav-link {
-    background-color: $white;
-    color: $menu-link;
-}
-
 @include media-breakpoint-up($next-breakpoint) {
     .nav-item > .nav-link {
         color: $white;
@@ -210,6 +203,19 @@ $slide-out-animation: left 0.5s cubic-bezier(0, 1, 0.5, 1);
             > .nav-link {
                 padding-left: 0;
             }
+        }
+    }
+}
+
+.nav-item{
+    .nav-link {
+        border-left: solid 0px transparent;
+        transition: all .3s ease-out;
+        color: #d4d4d4!important;
+        &:hover{
+            border-left: 3px solid #0071e3;
+            color: #ffffff;
+            border-radius: 3px 0 0 3px;
         }
     }
 }

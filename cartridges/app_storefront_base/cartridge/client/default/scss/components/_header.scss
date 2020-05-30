@@ -71,26 +71,35 @@ header {
                             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8c0178', endColorstr='#ff157c', GradientType=1);
                             /* IE6-9 */
                             border-radius: 5px 0px 0px 5px;
-                            transition: background-color 0.333s ease-in-out;
+                            transition: all .3s ease-in;
+                            padding-left: 12px;
+                            padding-right: 12px;
 
                             &:hover {
-                                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8c0178+0,ff157c+100 */
-                                background: #ff157c;
-                                /* Old browsers */
-                                background: -moz-linear-gradient(left, #ff157c 0%, #8c0178 100%);
-                                /* FF3.6-15 */
-                                background: -webkit-linear-gradient(left, #ff157c 0%, #8c0178 100%);
-                                /* Chrome10-25,Safari5.1-6 */
-                                background: linear-gradient(to right, #ff157c 0%, #8c0178 100%);
-                                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff157c', endColorstr='#8c0178', GradientType=1);
-                                /* IE6-9 */
+                                padding-left: 24px;
+                                padding-right: 24px;
+                                border-radius: 8px 0 0 8px;
                             }
                         }
 
                         &.blue {
                             background: #0071e3;
                             border-radius: 0px 5px 5px 0px;
+                            transition: all .3s ease-in;
+                            padding-left: 12px;
+                            padding-right: 12px;
+                            /* Old browsers */
+                            background: -moz-linear-gradient(left, #0071e3 0%, #0052a5 100%);
+                            /* FF3.6-15 */
+                            background: -webkit-linear-gradient(left, #0071e3 0%, #0052a5 100%);
+                            /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(to right, #0071e3 0%, #0052a5 100%);
+                            box-shadow: 0 0 6px 2px #000;
+                            &:hover {
+                                padding-left: 18px;
+                                padding-right: 18px;
+                                border-radius: 0 8px 8px 0;
+                            }
                         }
                     }
                 }
