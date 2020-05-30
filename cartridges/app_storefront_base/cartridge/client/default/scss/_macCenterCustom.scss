@@ -56,4 +56,30 @@ a.btn-type-01 {
     }
 
 }
+.modal-dialog{
+    .modal-header {
+        font-family: Roboto;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-size: 1.5rem;
+        color: #fff;
+        border-radius: 0;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0a0a0a+14,0a0a0a+21,383838+100 */
+        background: rgb(10,10,10); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(10,10,10,1) 14%, rgba(10,10,10,1) 21%, rgba(56,56,56,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(10,10,10,1) 14%,rgba(10,10,10,1) 21%,rgba(56,56,56,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(10,10,10,1) 14%,rgba(10,10,10,1) 21%,rgba(56,56,56,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
+    }
+    .modal-body{
+        color: #222;
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+}
+.btn-primary{
+    background-color: #0071e3!important;
+}
 
