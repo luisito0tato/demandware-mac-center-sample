@@ -131,13 +131,21 @@
             font-size: 5.5em;
             font-weight: 200;
 
-            @include media-breakpoint-down(lg) { font-size: 4.5em; }
+            @include media-breakpoint-down(lg) {
+                font-size: 4.5em;
+            }
 
-            @include media-breakpoint-down(md) { font-size: 3.4em; }
+            @include media-breakpoint-down(md) {
+                font-size: 3.4em;
+            }
 
-            @include media-breakpoint-down(sm) { font-size: 3em; }
+            @include media-breakpoint-down(sm) {
+                font-size: 3em;
+            }
 
-            @include media-breakpoint-down(xs) { font-size: 2.5em; }
+            @include media-breakpoint-down(xs) {
+                font-size: 2.5em;
+            }
         }
 
         a {
@@ -150,7 +158,7 @@
 .home-email-signup {
     background-color: $grey6;
 
-    > .container {
+    >.container {
         padding-top: 0.625em;
         padding-bottom: 0.625em;
     }
@@ -158,13 +166,5 @@
     .email-description {
         padding-top: 0.375em;
         color: $white;
-    }
-}
-
-
-.product-tile{
-    .tile-body {
-        padding: .625em 0 1.875em;
-        text-align: center;
     }
 }

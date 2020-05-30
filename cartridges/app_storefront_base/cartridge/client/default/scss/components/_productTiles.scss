@@ -13,7 +13,8 @@
 
 .product-tile {
 
-    box-shadow: 0 0 3px 3px rgba(0,0,0, 0.02);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.02);
+
     @include media-breakpoint-down(md) {
         min-height: 23.4375em;
     }
@@ -37,6 +38,8 @@
         border-right: solid 1px #e2e2e2;
         border-bottom: solid 1px #e2e2e2;
         border-top: none;
+        text-align: center;
+
         .color-swatches {
             min-height: 2.25em;
 
@@ -53,6 +56,7 @@
                 }
             }
         }
+
         .tile-body-footer {
             justify-content: center;
         }
